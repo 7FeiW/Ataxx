@@ -1,5 +1,4 @@
-#ifndef ATAXXSTATE_H
-#define ATAXXSTATE_H
+#pragma once
 
 #include <cmath>
 #include <iostream>
@@ -190,4 +189,4 @@ public:
                                          int mode = 1);
 
 };
-#endif // ifndef ATAXXSTATE_H
+

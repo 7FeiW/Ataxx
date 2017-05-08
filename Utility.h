@@ -3,7 +3,7 @@
 // Created by tellf on 2017/2/7.
 //
 
-#ifndef UTILITY
+#pragma once
 #define UTILITY
 #include <ctime>
 
@@ -23,4 +23,3 @@ static const int TwoStepMovesJ[16] = { -2, -1,  0,  1,  2, -2,  2, -2, 2, -2, 2,
 // Output strings
 static const std::string BLACK_OUTPUT = "##";
 static const std::string WHITE_OUTPUT = "()";
-#endif // UTILITY

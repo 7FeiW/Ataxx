@@ -1,5 +1,4 @@
-#ifndef ATAXX
-#define ATAXX
+#pragma once
 
 #include "AtaxxState.h"
 #include <algorithm>
@@ -70,42 +69,6 @@ private:
 
     // Function to Update End Game Flag
     void UpdateEndGameFlag();
-    
-    int AlphaBetaSearch(AtaxxState *state,
-                        int depth,
-                        int alpha,
-                        int beta,
-                        int color,
-                        unordered_map<unsigned long long, TTEntry>& transTable,
-                        unordered_map<unsigned long long, int>&stateVisited,
-                        clock_t& statTime,
-                        const int& timeAllowed,
-                        int & numAbCalls,
-                        int & numTTQueries,
-                        int & numBetaCut);
-    // NegaScoutSearch
-    int NegaScoutSearch(AtaxxState *state,
-                        int depth,
-                        int alpha,
-                        int beta,
-                        int color,
-                        unordered_map<unsigned long long, TTEntry>& transTable,
-                        unordered_map<unsigned long long, int>&stateVisited,
-                        clock_t& statTime,
-                        const int& timeAllowed,
-                        int & numAbCalls,
-                        int & numTTQueries,
-                        int & numBetaCut);
-
-    // function to find best  move  for current playerand return a point to new state
-    AtaxxState* FindBestMove(AtaxxState *state,
-                                     int depth,
-                                     unordered_map<unsigned long long, TTEntry>& transTable,
-                                     unordered_map<unsigned long long, int>
-                                     &stateVisited,
-                                     clock_t & statTime,
-                                     int timeAllowed = numeric_limits<int>::max(),
-                                     int mode = 1);
 
 public:
 
@@ -133,5 +96,3 @@ public:
     string FindBestMove();
 
 };
-
-#endif // ifndef ATA
